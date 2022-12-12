@@ -1,0 +1,32 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header_links {
+  width: 15rem;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+ 
+}
+
+.Header_Links-Home {
+  text-decoration: none;
+  color: #FF6060;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+}
+
+.Header_Links-About {
+  text-decoration: none;
+  color: #FF6060;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+}
