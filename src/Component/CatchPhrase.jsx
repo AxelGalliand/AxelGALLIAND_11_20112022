@@ -1,10 +1,12 @@
 import React from "react";
-import './CatchPhrase.modules.css';
+import styles from './CatchPhrase.module.css';
 
 export function CatchPhrase () {
   return (
-    <div className="CatchPhrase">
-      <span className="CatchPhrase_phrase">Chez vous, partout et ailleurs</span>
+
+    <div className={styles["catchphrase-cont"]}>
+      <div className={styles["catchphrase"]}></div>
+      <span className={styles["catchphrase_phrase"]}>Chez vous, partout et ailleurs</span>
     </div>
   )
 }

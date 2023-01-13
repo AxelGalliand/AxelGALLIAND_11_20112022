@@ -1,11 +1,11 @@
 import React from "react";
-import { Header } from "../Header";
+import styles from './About.module.css';
+import { AboutImg } from "../About_img"; 
 
 export default function Home (){
   return (
-    <div>
-      <Header/>
-
+    <div className={styles["About"]}>
+      <AboutImg/>
     </div>
   )
 }

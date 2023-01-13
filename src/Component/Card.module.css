@@ -1,0 +1,23 @@
+.card{
+display: flex;
+justify-content: left;
+align-items: flex-end;
+background: linear-gradient(180deg, #ff6060 0%, rgba(82, 0, 0, 0.671) 100%);
+width: 440px;
+height: 440px;
+border-radius: 10px;
+margin: 3em;
+padding: 1em;
+}
+
+.card-img{
+  
+}
+
+.card-title{
+color: #F7F7F7;
+display: block;
+width: 5em;
+line-height: 35px;
+font-size: 1.3em;
+}

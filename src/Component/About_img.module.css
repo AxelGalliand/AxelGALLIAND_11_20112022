@@ -1,0 +1,15 @@
+.img-cont{
+    position: relative;
+  }
+  
+  .img{
+    display: flex;
+    justify-content: center;
+    background-image: url("../IMG/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.80);
+    border-radius: 25px;
+    padding: 6em;
+    margin-bottom: 4em;
+  }
