@@ -1,0 +1,229 @@
+.logement{
+  margin: 50px 125px 0rem 125px;
+}
+
+.carrousel{
+  position: relative;
+  height: 415px;
+  display: flex;
+
+}
+
+.carrousel_img{
+  filter: brightness(0.80);
+  border-radius: 25px;
+  margin-bottom: 2em;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+.left_button{
+  place-items: center;
+  line-height: 142.6%;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 8em;
+  width: 5em;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.left_chevron{
+
+}
+
+.right_button{
+  place-items: center;
+  line-height: 142.6%;
+  position: absolute;
+  top: 40%;
+  right: 00%;
+  height: 8em;
+  width: 5em;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.right_chevron{
+  transform: rotate(180deg);
+}
+
+.count{
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  color: white;
+  font-size: x-large;
+}
+
+.logement_info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logement_titleAndLocAndTag{
+  display: flex;
+  flex-direction: column;
+}
+
+.logement_title{
+  font-size: xx-large;
+  color: #FF6060;
+  font-weight: 900;
+  margin-bottom: 0.2em;
+}
+
+.logement_loc{
+  color: #FF6060;
+  font-size: larger;
+  font-weight: 600;
+
+}
+
+.logement_tag{
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.logement_tag > span {
+  padding: 0.2em 2.5em;
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+}
+
+.logement_hostAndRating{
+  display: flex;
+  flex-direction: column;
+}
+
+.logement_host{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: right;
+  height: 5em;
+}
+
+.host_name{
+  color: #FF6060;
+  font-weight: 900;
+  font-size: larger;
+  width: min-content;
+  padding-top: 0.8em;
+}
+
+.host_img{
+  filter: brightness(0.80);
+  /* padding-top: 1em; */
+  margin-bottom: 1em;
+  height: 100%;
+  object-fit: cover;
+  /* width: 30%;
+  border-radius: 50%; */
+  clip-path: circle(30%);
+}
+
+.rating{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logement_descrAndEquip {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.descr{
+  background-color:#F7F7F7;
+  max-width: 650px;
+  width: 50em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.descr_title{
+position: relative;
+display: flex;
+justify-content: space-between;
+background-color: #FF6060;
+border-radius: 10px;
+
+}
+
+.descr_title-text{
+
+  color: white;
+  font-size: large;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  max-width: 650px;
+
+}
+
+.descr_title-chevron{
+  line-height: 142.6%;
+  margin-right: 1em;
+  transform: rotate(90deg);
+  width: 3%;
+  
+}
+
+.descr_para{
+  color: #FF6060;
+  font-size: large;
+  padding: 1em;
+  font-size: larger;
+}
+
+.equip{
+
+  background-color:#F7F7F7;
+  max-width: 650px;
+  width: 50em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.equip_title{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF6060;
+  border-radius: 10px;
+
+}
+
+.equip_title-chevron{
+  line-height: 142.6%;
+  margin-right: 1em;
+  transform: rotate(90deg);
+  width: 3%;
+  
+}
+.equip_title-text{
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  font-size: large;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.equip_list{
+  color: #FF6060;
+  font-size: large;
+  list-style: none;
+  padding: 1em;
+  font-size: larger;
+}

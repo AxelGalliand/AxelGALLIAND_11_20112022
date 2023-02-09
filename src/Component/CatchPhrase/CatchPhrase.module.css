@@ -6,7 +6,7 @@
 .catchphrase{
   display: flex;
   justify-content: center;
-  background-image: url("../IMG/eric-muhr-P_XxsdVgtpQ-unsplash.jpg");
+  background-image: url("../../IMG/eric-muhr-P_XxsdVgtpQ-unsplash.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.80);

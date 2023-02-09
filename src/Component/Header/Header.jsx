@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Header.module.css';
-import Logo from './Logo.svg'
+import Logo from '../svgFolder/Logo.svg';
 import { NavLink } from "react-router-dom";
 
  export function Header() {
@@ -14,6 +14,7 @@ import { NavLink } from "react-router-dom";
         {/* <NavLink className={styles["Header_Links-Home"]} to="/" >Accueil</NavLink> */}
         <NavLink style={({ isActive }) =>isActive ? {textDecorationLine: "underline"} : undefined} className={styles["header_links-home"]} to="/" >Accueil</NavLink>
         <NavLink style={({ isActive }) =>isActive ? {textDecorationLine: "underline"} : undefined} className={styles["header_links-about"]} to="/About">A Propo</NavLink>
+        <NavLink style={({ isActive }) =>isActive ? {textDecorationLine: "underline"} : undefined} className={styles["header_links-test"]} to="/Logement">teste</NavLink>
       </nav>
     </div>
   )
