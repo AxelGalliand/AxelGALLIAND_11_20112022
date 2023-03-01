@@ -1,37 +1,36 @@
 import React, {useEffect, useState} from "react";
-import './Carrousel.module.css';
+import styles from './Carrousel.module.css';
+import Chevron from "../svgFolder/Chevron.svg";
 
 export function Carrousel ({imgList}) {
 	const [counter, setCounter] = useState(0);
-//   const [locations, setLocations] = useState([]);
-// 	const [isLoading, setIsLoading] = useState(false);
-// 	const [err, setErr] = useState(false);
-// 	useEffect(() => {
-// 		setIsLoading(true)
-// 		fetch("/location.json")
-// 			.then(response => response.json())
-// 			.then(data => {
-// 				setLocations(data)
-// 				setIsLoading(false)
-// 			})
-// 			.catch(err => {
-// 				setIsLoading(false)
-// 				setErr("Oupss")
-// 			})
-// 		},[]);
-
-// 	if (err) return <div>{err}</div>
-
-// 	if (isLoading) return <div>Chargement...</div>
+  const nbImg = imgList.length;
 
 
   return (
-    <div className="carrousel">
-      <svg className="left_chevron"></svg>
-      <svg onClick={() => {
-		setCounter(counter + 1)
-	  }} className="right_chevron"></svg>
-      <img src={imgList[counter]} className="carrousel_img"/>
+    <div className={styles["carrousel"]}>
+       <img src={imgList[counter]} alt="representation du logement" className={styles["carrousel_img"]}/>
+      {(nbImg > 1) && <button onClick={() => {
+        if(counter === 0){
+         setCounter(nbImg - 1)
+        }
+        else{
+          setCounter(counter - 1)
+        }
+      }} className={styles["left_button"]}>
+        <img className={styles["left_chevron"]} src={Chevron} alt="svg_chevron_gauche"/>
+      </button>}
+      {(nbImg > 1) && <button onClick={() => {
+        if(counter === nbImg - 1){
+          setCounter(counter - nbImg +1)
+        }else{
+		    setCounter(counter + 1)
+        }
+	     }} className={styles["right_button"]}> 
+        <img className={styles["right_chevron"]} src={Chevron} alt="svg_chevron_droite"/>
+       </button>}
+       {(nbImg > 1) && <span className={styles["count"]}>{counter + 1}/{nbImg}</span>
+     }
     </div>
   )
 }

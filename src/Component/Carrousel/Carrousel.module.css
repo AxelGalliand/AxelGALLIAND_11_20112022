@@ -1,23 +1,52 @@
 .carrousel{
   position: relative;
+  display: flex;
+  height: 30em;
+  margin-bottom: 2em;
 }
 
-.left_chevron{
-
+.left_button{
+  place-items: center;
+  line-height: 142.6%;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 8em;
+  width: 5em;
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
 
-.right_chevron{
-
+.right_button{
+transform: rotate(180deg);
+place-items: center;
+line-height: 142.6%;
+position: absolute;
+top: 40%;
+right: 00%;
+height: 8em;
+width: 5em;
+background: none;
+border: 0;
+cursor: pointer;
 }
+
 
 .carrousel_img{
-  display: flex;
-  justify-content: center;
-  background-image: url("../../IMG/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
   filter: brightness(0.80);
   border-radius: 25px;
-  padding: 6em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+.count{
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  color: white;
+  font-size: x-large;
 }

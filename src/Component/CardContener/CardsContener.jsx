@@ -27,7 +27,8 @@ export function CardsContener () {
 
   return (
     <div className="card-contener">
-	  {locations.map(location => <Card key={location.id} className={location.id} title={location.title} cover={location.cover}/>)}
+	  {locations.map(location => <Card id={location.id} key={location.id} className={location.id} title={location.title} cover={location.cover} />)}
     </div>
   )
 }
+// key={location.id} className={location.id} title={location.title} cover={location.cover}
