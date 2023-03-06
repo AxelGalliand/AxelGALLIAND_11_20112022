@@ -25,7 +25,7 @@ export function InfoLogement(props) {
             <span className={styles["host_name"]}>{props.name}</span>
             <img src={props.pic} alt="proprietaire"className={styles["host_img"]}></img>
           </div>
-          <Rating count="3"/>
+          <Rating count={props.rating}/>
         </div>
       </div>
   )

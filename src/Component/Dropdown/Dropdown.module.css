@@ -1,28 +1,29 @@
+
+
 .descr{
-  max-width: 650px;
-  width: 50em;
+  max-width: auto;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 2em;
+  
 }
 
 .descr_title{
 position: relative;
 display: flex;
+height: 3em;
 justify-content: space-between;
 background-color: #FF6060;
 border-radius: 5px;
-
 }
 
 .descr_title-text{
-
   color: white;
   font-size: large;
   padding-left: 1em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   max-width: 650px;
-
 }
 
 .descr_title-chevron{
@@ -30,10 +31,10 @@ border-radius: 5px;
   margin-right: 1em;
   transform: rotate(90deg);
   width: 3%;
-  
+
 }
 
-.descr_para{
+/* .descr_para{
   color: #FF6060;
   background-color:#F7F7F7;
   font-size: large;
@@ -43,7 +44,7 @@ border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 2em;
   margin-top: 0;
-}
+} */
 
 .close {
 transform: rotate(270deg);
