@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './InfoLogement.module.css'
 import { Rating } from "../Rating/Rating";
-
+import { Tag } from "../Tag/Tag"
 
 export function InfoLogement(props) {
   return (
@@ -9,15 +9,11 @@ export function InfoLogement(props) {
         <div className={styles["logement_titleAndLocAndTag"]}>
           <span className={styles["logement_title"]}>{props.title}</span> 
           <span className={styles["logement_loc"]}>{props.loc}</span>
+          {/* <Tag tags={props.tags}/> */}
           <div className={styles["logement_tag"]}>
             {
-              props.tags.map(tagText => <span className={styles["tag"]}>{tagText}</span>)
+              props.tags.map(tagText => <span key={tagText}>{tagText}</span>)
             }
-
-            {/* <TagList data={tagArr}/> */}
-            {/* <span className={styles["tag"]}>{props.tag1}</span>
-            <span className={styles["tag"]}>{props.tag2}</span>
-            <span className={styles["tag"]}>{props.tag3}</span> */}
           </div>
         </div>
         <div className={styles["logement_hostAndRating"]}>

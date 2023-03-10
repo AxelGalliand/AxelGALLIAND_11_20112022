@@ -3,16 +3,17 @@ display: flex;
 justify-content: left;
 align-items: flex-end;
 background: linear-gradient(180deg, #ff6060 0%, rgba(82, 0, 0, 0.671) 100%);
-width: 440px;
-height: 440px;
+width: 30em;
+height: 30em;
 border-radius: 10px;
 margin: 3em;
+cursor: pointer;
 /* padding: 1em; */
 }
 
 .card-img{
-width: 440px;
-height: 440px;
+width: 30em;
+height: 30em;
 border-radius: 10px;
 position: relative;
 }

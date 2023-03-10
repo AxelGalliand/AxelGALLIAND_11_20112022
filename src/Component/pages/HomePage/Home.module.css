@@ -1,4 +1,10 @@
 .home{
   margin: 50px 125px 0rem 125px;
+}
 
+@media (max-width: 1100px) {
+  .home{
+  margin-bottom: 2em;
+  margin: 20px 25px 0rem 25px;
+}
 }

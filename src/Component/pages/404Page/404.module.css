@@ -1,0 +1,30 @@
+.error{
+  margin: 0px 125px 0rem 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+.error_h1{
+  color: #FF6060;
+  font-size: 1250%;
+  font-weight: 700;
+  margin: 0.2em;
+}
+
+.error_span{
+  font-size: xx-large;
+  color: #FF6060;
+  font-weight: 400;
+  margin-bottom: 6em;
+  
+}
+
+.error_backLink{
+  color: #FF6060;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-bottom: 6em;
+}

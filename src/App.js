@@ -6,7 +6,7 @@ import {Footer} from './Component/Footer/Footer';
 import Home from './Component/pages/HomePage/Home';
 import About from './Component/pages/AboutPage/About';
 import Logement from './Component/pages/LogementPage/Logement';
-
+import Error  from './Component/pages/404Page/404';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/About' element={<About />} />
         <Route path='/Logement/:id' element={<Logement />} />
-        <Route path='*' element={<div>ERROR</div>} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer/>
 

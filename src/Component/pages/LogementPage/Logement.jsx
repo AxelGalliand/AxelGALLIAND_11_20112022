@@ -14,7 +14,6 @@ export default function Logement (){
   let {id} = useParams();
   console.log(id)
 	useEffect(() => {
-		// setIsLoading(true)
 		fetch("/location.json")
 			.then(response => response.json())
 			.then(data => {
@@ -36,7 +35,7 @@ export default function Logement (){
   // if () return <Navigate to="/404" />
   
   return (
-    <div className={styles["logement"]}>
+    <div className={styles["logement"]} key={Logement}>
       <Carrousel imgList={Location.pictures}/>
       <InfoLogement title={Location.title} tags={Location.tags} name={Location.host.name} pic={Location.host.picture} loc={Location.location} rating={Location.rating}/>
       <div className={styles["logement_descrAndEquip"]}>

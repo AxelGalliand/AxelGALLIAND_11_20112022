@@ -1,8 +1,19 @@
+html{
+  height: 100%;
+}
 body {
+  height: 100%;
   margin: 0;
   font-family:'Montserrat',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto ; */
+}
+#root{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto ;
 }
 
 code {
