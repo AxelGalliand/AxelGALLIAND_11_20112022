@@ -3,7 +3,7 @@ import styles from './Logement.module.css';
 import { Carrousel } from "../../Carrousel/Carrousel";
 import { Dropdown } from "../../Dropdown/Dropdown";
 import { InfoLogement } from "../../InfoLogement/InfoLogement";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 
 
@@ -26,13 +26,13 @@ export default function Logement (){
 			})
 		},[]);
   const Location = locations.filter((location) => location.id === id)[0]
-
   
 	if (err) return <div>{err}</div>
 
-	if (isLoading) return <div>Chargement...</div>
+	if (isLoading) return <div>Chargement...</div> 
 
-  // if () return <Navigate to="/404" />
+  if (Location === undefined) return <Navigate to="/404" />
+
   
   return (
     <div className={styles["logement"]} key={Logement}>

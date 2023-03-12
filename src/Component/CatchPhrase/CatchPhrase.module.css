@@ -14,6 +14,13 @@
   padding: 6em;
   margin-bottom: 4em;
 }
+
+@media (max-width: 1100px) {
+  .catchphrase{
+    margin-bottom: 0;
+    
+}
+}
 .catchphrase_phrase {
   place-items: center;
   font-style: normal;

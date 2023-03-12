@@ -8,11 +8,14 @@
   padding: 2em;
   margin-bottom: 5em;
 }
+
+
 @media (max-width: 1100px) {
   .card-contener{
   background-color: #FFFF;
   padding: 0;
   margin-bottom: 0;
+  /* flex-direction: column; */
   
 }
 }
