@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './InfoLogement.module.css'
 import { Rating } from "../Rating/Rating";
-import { Tag } from "../Tag/Tag"
 
 export function InfoLogement(props) {
   return (
