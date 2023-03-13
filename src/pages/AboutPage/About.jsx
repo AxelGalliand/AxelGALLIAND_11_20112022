@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './About.module.css';
-import { AboutImg } from "../../About_img/About_img"; 
-import { Dropdown } from "../../Dropdown/Dropdown";
+import { AboutImg } from "../../Component/About_img/About_img"; 
+import { Dropdown } from "../../Component/Dropdown/Dropdown";
 
 export default function About (){
   return (

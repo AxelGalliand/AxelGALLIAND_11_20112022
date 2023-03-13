@@ -10,11 +10,11 @@ body {
   /* display: grid;
   grid-template-rows: auto 1fr auto ; */
 }
-#root{
+/* #root{
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto ;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

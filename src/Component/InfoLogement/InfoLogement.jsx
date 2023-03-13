@@ -9,7 +9,6 @@ export function InfoLogement(props) {
         <div className={styles["logement_titleAndLocAndTag"]}>
           <span className={styles["logement_title"]}>{props.title}</span> 
           <span className={styles["logement_loc"]}>{props.loc}</span>
-          {/* <Tag tags={props.tags}/> */}
           <div className={styles["logement_tag"]}>
             {
               props.tags.map(tagText => <span key={tagText}>{tagText}</span>)

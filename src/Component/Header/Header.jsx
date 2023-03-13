@@ -11,10 +11,8 @@ import { NavLink } from "react-router-dom";
       </NavLink>
 
       <nav className={styles["header_links"]}>
-        {/* <NavLink className={styles["Header_Links-Home"]} to="/" >Accueil</NavLink> */}
         <NavLink style={({ isActive }) =>isActive ? {textDecorationLine: "underline"} : undefined} className={styles["header_links-home"]} to="/" >Accueil</NavLink>
         <NavLink style={({ isActive }) =>isActive ? {textDecorationLine: "underline"} : undefined} className={styles["header_links-about"]} to="/About">A Propo</NavLink>
-        <NavLink style={({ isActive }) =>isActive ? {textDecorationLine: "underline"} : undefined} className={styles["header_links-test"]} to="/Logement">teste</NavLink>
       </nav>
     </div>
   )

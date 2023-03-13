@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from "react";
 import styles from './Logement.module.css';
-import { Carrousel } from "../../Carrousel/Carrousel";
-import { Dropdown } from "../../Dropdown/Dropdown";
-import { InfoLogement } from "../../InfoLogement/InfoLogement";
+import { Carrousel } from "../../Component/Carrousel/Carrousel";
+import { Dropdown } from "../../Component/Dropdown/Dropdown";
+import { InfoLogement } from "../../Component/InfoLogement/InfoLogement";
 import { useParams, Navigate } from "react-router-dom";
-
-
 
 export default function Logement (){
   const [locations, setLocations] = useState([]);
@@ -25,38 +23,30 @@ export default function Logement (){
 				setErr("Oupss")
 			})
 		},[]);
-  const Location = locations.filter((location) => location.id === id)[0]
+  const location = locations.filter((location) => location.id === id)[0]
   
 	if (err) return <div>{err}</div>
 
 	if (isLoading) return <div>Chargement...</div> 
 
-  if (Location === undefined) return <Navigate to="/404" />
+  if (location === undefined) return <Navigate to="/404" />
 
-  
   return (
     <div className={styles["logement"]} key={Logement}>
-      <Carrousel imgList={Location.pictures}/>
-      <InfoLogement title={Location.title} tags={Location.tags} name={Location.host.name} pic={Location.host.picture} loc={Location.location} rating={Location.rating}/>
+      <Carrousel imgList={location.pictures}/>
+      <InfoLogement title={location.title} tags={location.tags} name={location.host.name} pic={location.host.picture} loc={location.location} rating={location.rating}/>
       <div className={styles["logement_descrAndEquip"]}>
         <div className={styles["logement_descr"]}>
           <Dropdown title="Description">
-            <p className={styles["descr_para"]}>{Location.description}</p>
+            <p className={styles["descr_para"]}>{location.description}</p>
           </Dropdown>
         </div>
         <div className={styles["logement_descr"]}>
         <Dropdown className={styles["dropLoc"]} title="Equipements">
           <ul className={styles["descr_para"]}>
             {
-              Location.equipments.map(equipment => <li className={styles["tag"]}>{equipment}</li>)
+              location.equipments.map(equipment => <li key={equipment} className={styles["tag"]}>{equipment}</li>)
             }
-            {/* <li>Climatisation</li>
-            <li>Wi-fi</li>
-            <li>Cuisine</li>
-            <li>Espace de travail</li>
-            <li>Fer à repasser</li>
-            <li>Sèche-cheveux</li>
-            <li>Cintres</li> */}
           </ul>
         </Dropdown>
         </div>

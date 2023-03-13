@@ -14,6 +14,7 @@ justify-content: space-between;
 background-color: #FF6060;
 border-radius: 5px;
 cursor: pointer;
+border: ;
 }
 
 .descr_title-text{
@@ -30,7 +31,8 @@ cursor: pointer;
   margin-right: 1em;
   transform: rotate(90deg);
   width: 3%;
-
+  background: none;
+  border: none;
 }
 
 .close {

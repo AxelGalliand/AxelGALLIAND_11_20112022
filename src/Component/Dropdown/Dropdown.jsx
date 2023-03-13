@@ -13,13 +13,10 @@ export function Dropdown (props) {
 
   return (
     <div className={styles["descr"]}>
-      <div onClick={ChevronClick} className={styles["descr_title"]}>
+      <div  onClick={ChevronClick} className={styles["descr_title"]}>
         <span className={styles["descr_title-text"]}>{props.title}</span>
-        <img className={styles["descr_title-chevron"] + " " + styles[isOpen ? "" : "close" ]} src={Chevron} alt="svg_chevron_droite"></img>
-        {/* {isOpen && } */}
+        <img  tabIndex={0} className={styles["descr_title-chevron"] + " " + styles[isOpen ? "" : "close" ]} src={Chevron} alt="svg_chevron_droite"></img>
       </div>
-      {/* <p className={styles["descr_para"] + " " + styles[isOpen ? "" : "close"]}>Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.</p> */}
-      {/* <p className={styles["descr_para"]} style={{display: isOpen ? "block" : "none"}}>Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.</p> */}
       {isOpen && props.children }
     </div>
   )

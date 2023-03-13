@@ -2,3 +2,34 @@
   display: flex;
   justify-content: space-between;
 }
+
+.fullStar {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+@media (max-width: 1100px) {
+  .fullStar{
+  height: 1.5em;
+  width: 1.5em;
+}
+}
+
+.emptyStar{
+  height: 2.5em;
+  width: 2.5em;
+}
+
+@media (max-width: 1100px) {
+  .emptyStar{
+  height: 1.5em;
+  width: 1.5em;
+}
+}
+
+@media (max-width: 1100px) {
+  .rating{
+  padding-top: 1em;
+  height: 50%;
+}
+}
