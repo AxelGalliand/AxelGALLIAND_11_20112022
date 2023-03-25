@@ -17,31 +17,29 @@
   border: 0;
   cursor: pointer;
 }
-
 @media (max-width: 1100px) {
   .left_chevron{
-height: 40%;
-}
+    height: 40%;
+  }
 }
 
 .right_button{
-transform: rotate(180deg);
-place-items: center;
-line-height: 142.6%;
-position: absolute;
-top: 38.9%;
-right: 00%;
-height: 8em;
-width: 5em;
-background: none;
-border: 0;
-cursor: pointer;
+  transform: rotate(180deg);
+  place-items: center;
+  line-height: 142.6%;
+  position: absolute;
+  top: 38.9%;
+  right: 00%;
+  height: 8em;
+  width: 5em;
+  background: none;
+  border: 0;
+  cursor: pointer;
 }
-
 @media (max-width: 1100px) {
   .right_chevron{
-height: 40%;
-}
+    height: 40%;
+  }
 }
 
 .carrousel_img{
@@ -52,6 +50,7 @@ height: 40%;
   object-fit: cover;
   width: 100%;
   position: relative;
+  object-fit: cover;
 }
 
 .count{

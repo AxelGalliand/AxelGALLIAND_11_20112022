@@ -1,12 +1,9 @@
 import styles from "./Dropdown.module.css"
 import React,{useState} from "react"
-import Chevron from "../svgFolder/Chevron.svg"
-
-
+import Chevron from "../../IMG/svgFolder/Chevron.svg"
 
 export function Dropdown (props) {
   const [isOpen, setIsOpen] = useState(false);
-
   function ChevronClick () {
     setIsOpen((prevIsOpen) => !prevIsOpen)
   }

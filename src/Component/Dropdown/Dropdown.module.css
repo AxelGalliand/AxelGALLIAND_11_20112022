@@ -3,17 +3,16 @@
   width: 100%;
   border-radius: 10px;
   margin-bottom: 2em;
-  
 }
 
 .descr_title{
-position: relative;
-display: flex;
-height: 3em;
-justify-content: space-between;
-background-color: #FF6060;
-border-radius: 5px;
-cursor: pointer;
+  position: relative;
+  display: flex;
+  height: 3em;
+  justify-content: space-between;
+  background-color: #FF6060;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .descr_title-text{

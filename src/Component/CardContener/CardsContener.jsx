@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import { Card } from "../Card/Card"; 
 import './CardsContener.modules.css';
 
-
 export function CardsContener () {
 	const [locations, setLocations] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
@@ -31,4 +30,3 @@ export function CardsContener () {
     </div>
   )
 }
-// key={location.id} className={location.id} title={location.title} cover={location.cover}

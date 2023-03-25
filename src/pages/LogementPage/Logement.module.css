@@ -1,11 +1,10 @@
 .logement{
   margin: 50px 125px 0rem 125px;
 }
-
 @media (max-width: 1100px) {
   .logement{
-  margin: 20px 25px 0rem 25px;
-}
+    margin: 20px 20px 0rem 20px;
+  }
 }
 
 .logement_descrAndEquip {
@@ -15,7 +14,12 @@
 }
 
 .logement_descr {
-  width: 38em;
+  width: 40%;
+}
+@media (max-width: 1100px) {
+  .logement_descr{
+    width: 335px;
+  }
 }
 
 .descr_para{

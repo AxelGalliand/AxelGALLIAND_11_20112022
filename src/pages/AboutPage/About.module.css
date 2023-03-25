@@ -2,11 +2,10 @@
   margin: 50px 125px 0rem 125px;
   min-height: 100%;
 }
-
 @media (max-width: 1100px) {
   .About{
-  margin: 20px 25px 0rem 25px;
-}
+    margin: 20px 20px 0rem 20px;
+  }
 }
 
 .About_drop{
@@ -18,7 +17,7 @@
 @media (max-width: 1100px) {
   .About_drop{
     padding: 0;
-}
+  }
 }
 
 .descr_para{

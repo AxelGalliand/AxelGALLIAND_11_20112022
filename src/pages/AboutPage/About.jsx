@@ -21,7 +21,6 @@ export default function About (){
           <p className={styles["descr_para"]}>  La securité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de Sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos equipes de vérifier que les standards sont bien respectées.Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p> 
         </Dropdown>
       </div>
-
     </div>
   )
 }

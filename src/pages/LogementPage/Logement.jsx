@@ -10,7 +10,6 @@ export default function Logement (){
 	const [isLoading, setIsLoading] = useState(true);
 	const [err, setErr] = useState(false);
   let {id} = useParams();
-  console.log(id)
 	useEffect(() => {
 		fetch("/location.json")
 			.then(response => response.json())
@@ -42,13 +41,13 @@ export default function Logement (){
           </Dropdown>
         </div>
         <div className={styles["logement_descr"]}>
-        <Dropdown className={styles["dropLoc"]} title="Equipements">
-          <ul className={styles["descr_para"]}>
-            {
-              location.equipments.map(equipment => <li key={equipment} className={styles["tag"]}>{equipment}</li>)
-            }
-          </ul>
-        </Dropdown>
+          <Dropdown className={styles["dropLoc"]} title="Equipements">
+            <ul className={styles["descr_para"]}>
+              {
+                location.equipments.map(equipment => <li key={equipment} className={styles["tag"]}>{equipment}</li>)
+              }
+            </ul>
+          </Dropdown>
         </div>
       </div>
     </div>
