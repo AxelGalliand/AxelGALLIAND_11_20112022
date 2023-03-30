@@ -4,12 +4,17 @@
   height: 30em;
   margin-bottom: 2em;
 }
+@media (max-width: 1100px) {
+  .carrousel{
+    height: 350px;
+  }
+}
 
 .left_button{
   place-items: center;
   line-height: 142.6%;
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 0%;
   height: 8em;
   width: 5em;
@@ -20,6 +25,7 @@
 @media (max-width: 1100px) {
   .left_chevron{
     height: 40%;
+    top: 60%;
   }
 }
 
@@ -28,7 +34,7 @@
   place-items: center;
   line-height: 142.6%;
   position: absolute;
-  top: 38.9%;
+  top: 36.5%;
   right: 00%;
   height: 8em;
   width: 5em;
@@ -39,6 +45,7 @@
 @media (max-width: 1100px) {
   .right_chevron{
     height: 40%;
+    top: 60%
   }
 }
 
@@ -59,4 +66,5 @@
   right: 50%;
   color: white;
   font-size: x-large;
+  transform: translateX(50%);
 }
