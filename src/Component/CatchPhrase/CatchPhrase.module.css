@@ -29,7 +29,7 @@
   transform: translateX(-50%);
 
 }
-@media (max-width: 1450px) {
+@media (max-width: 1700px) {
   .catchphrase-phrase{
     top: 18%;
     left: 30%;
@@ -45,7 +45,7 @@
 .catchphraseBr {
   display: none;
 }
-@media (max-width: 1450px) {
+@media (max-width: 1700px) {
   .catchphraseBr{
     display: block;
   }
